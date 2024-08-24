@@ -22,10 +22,10 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r
-          project_with_test/requirements/test_requirements.txt
+          Titanic_model/requirements/test_requirements.txt
     - name: Train pipeline
       run: |
-        python project_with_test/titanic_model/train_pipeline.py
+        python Titanic_model/titanic_model/train_pipeline.py
     - name: Test with pytest
       run: |
         pytest
